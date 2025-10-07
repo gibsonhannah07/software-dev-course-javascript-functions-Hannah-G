@@ -72,3 +72,36 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+// Script 1 Refractored
+function greetUser(name) {
+   console.log("welcome, " + name + "!");
+}
+greetUser("Alice");
+greetUser("Bob");
+greetUser("Charlie");
+
+// Script 2 Refractored
+function calculateSum(a,b) {
+   return a + b;
+}
+let numOne = 5, numTwo = 10;
+let sum = calculateSum(numOne, numTwo);
+console.log("The sum of " + numOne + " plus " + numTwo + " is " + sum);
+
+// Script 3 Refractored
+function calculateProduct(a,b){
+   return a * b;
+}
+let product = calculateProduct(numOne, numTwo);
+console.log("The product of " + numOne + " times " + numTwo + " is " + product);
+
+// Script 4 Refractored
+function printNameList(nameArray) {
+   console.log("Names in the list:");
+   for (let i = 0; i < nameArray.length; i++) {
+      console.log(nameArray[i]);
+   }
+}
+let names = ["Alice", "Bob", "Charlie"];
+printNameList(names);
